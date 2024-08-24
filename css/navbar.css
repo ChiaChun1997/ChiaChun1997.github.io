@@ -1,3 +1,6 @@
+body {
+  background: #f9f9d3;
+}
 .nav {
   display: flex;
   width: 100%;
