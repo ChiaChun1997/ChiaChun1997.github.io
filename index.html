@@ -19,6 +19,7 @@
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/section1.css" />
     <link rel="stylesheet" href="./css/section2.css" />
     <link rel="stylesheet" href="./css/section3.css" />
@@ -32,7 +33,7 @@
       <div class="nav">
         <a class="logo" href="#">Chun</a>
         <div class="burger">
-          <a class="burgerText" href="#">About</a>
+          <a class="burgerText" href="#section2" id="aboutLink">About</a>
           <a class="burgerText" href="#">Portfolio</a>
           <a class="burgerText" href="#">Github</a>
           <a class="burgerText" href="#">Contact</a>
@@ -47,7 +48,7 @@
           nibh dui nunc egestas.
         </div>
       </section>
-      <section class="section2">
+      <section class="section2" id="section2">
         <div class="section2Content">
           <div class="section2ContentTitle">Hello, I am Alex.</div>
           <div class="section2ContentParagraph">
@@ -56,9 +57,11 @@
               ullamcorper etiam lorem eu sit neque amet. Non pellentesque semper
               libero viverra tortor ultrices volutpat.
             </p>
-            <button class="contactBtn">
-              <div class="contactBtnText">Contact</div>
-            </button>
+            <a href="#contact" style="text-decoration: none">
+              <button class="contactBtn">
+                <div class="contactBtnText">Contact</div>
+              </button>
+            </a>
           </div>
         </div>
         <div class="section2Pic">
@@ -136,25 +139,27 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="footerContent">
         <div class="footerTitle">Contact</div>
         <div class="footerParagraph">
           Email : alexchow297@gmail.com | Moblie : 0934336682
         </div>
         <div class="footerSVG">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="53"
-            height="53"
-            viewBox="0 0 124 124"
-            fill="none"
-          >
-            <path
-              d="M62 1.53464C27.7489 1.53464 0 29.3068 0 63.5346C0 90.9425 17.763 114.173 42.3809 122.369C45.4925 122.954 46.6162 121.036 46.6162 119.377C46.6162 117.905 46.5814 114.01 46.5581 108.841C29.3028 112.577 25.668 100.506 25.668 100.506C22.8431 93.3605 18.7666 91.4424 18.7666 91.4424C13.1556 87.61 19.2122 87.6914 19.2122 87.6914C25.4278 88.1138 28.6982 94.0658 28.6982 94.0658C34.2279 103.552 43.2063 100.808 46.7596 99.2118C47.3021 95.2166 48.918 92.4693 50.6772 90.9386C36.9132 89.3848 22.4401 84.0566 22.4401 60.299C22.4401 53.5139 24.8426 47.9881 28.8145 43.6481C28.1286 42.0943 26.0284 35.778 29.3609 27.2375C29.3609 27.2375 34.5495 25.5829 46.4109 33.5964C51.4632 32.2206 56.6746 31.5157 61.9109 31.5C67.1809 31.5349 72.447 32.2246 77.4109 33.5964C89.2025 25.5829 94.3873 27.2375 94.3873 27.2375C97.7159 35.778 95.6156 42.0904 95.0111 43.6481C98.9442 47.9881 101.347 53.5178 101.347 60.299C101.347 84.1109 86.8542 89.3615 73.0748 90.8766C75.2292 92.7328 77.2481 96.5496 77.2481 102.343C77.2481 110.635 77.1706 117.316 77.1706 119.335C77.1706 120.947 78.2556 122.884 81.4486 122.26C106.249 114.15 123.992 90.8999 123.992 63.5308C123.992 29.3029 96.2434 1.53076 61.9923 1.53076L62 1.53464Z"
-              fill="black"
-            />
-          </svg>
+          <a href="https://github.com/ChiaChun1997" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="53"
+              height="53"
+              viewBox="0 0 124 124"
+              fill="none"
+            >
+              <path
+                d="M62 1.53464C27.7489 1.53464 0 29.3068 0 63.5346C0 90.9425 17.763 114.173 42.3809 122.369C45.4925 122.954 46.6162 121.036 46.6162 119.377C46.6162 117.905 46.5814 114.01 46.5581 108.841C29.3028 112.577 25.668 100.506 25.668 100.506C22.8431 93.3605 18.7666 91.4424 18.7666 91.4424C13.1556 87.61 19.2122 87.6914 19.2122 87.6914C25.4278 88.1138 28.6982 94.0658 28.6982 94.0658C34.2279 103.552 43.2063 100.808 46.7596 99.2118C47.3021 95.2166 48.918 92.4693 50.6772 90.9386C36.9132 89.3848 22.4401 84.0566 22.4401 60.299C22.4401 53.5139 24.8426 47.9881 28.8145 43.6481C28.1286 42.0943 26.0284 35.778 29.3609 27.2375C29.3609 27.2375 34.5495 25.5829 46.4109 33.5964C51.4632 32.2206 56.6746 31.5157 61.9109 31.5C67.1809 31.5349 72.447 32.2246 77.4109 33.5964C89.2025 25.5829 94.3873 27.2375 94.3873 27.2375C97.7159 35.778 95.6156 42.0904 95.0111 43.6481C98.9442 47.9881 101.347 53.5178 101.347 60.299C101.347 84.1109 86.8542 89.3615 73.0748 90.8766C75.2292 92.7328 77.2481 96.5496 77.2481 102.343C77.2481 110.635 77.1706 117.316 77.1706 119.335C77.1706 120.947 78.2556 122.884 81.4486 122.26C106.249 114.15 123.992 90.8999 123.992 63.5308C123.992 29.3029 96.2434 1.53076 61.9923 1.53076L62 1.53464Z"
+                fill="black"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
@@ -170,5 +175,27 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document
+        .getElementById("aboutLink")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1); // 第 1 個字符（索引 1）開始提取子字符串，去掉 #，只返回 section1。
+          const targetElement = document.getElementById(targetId);
+          const navHeight = document.querySelector(".nav").offsetHeight;
+
+          const targetPosition =
+            targetElement.getBoundingClientRect().top +
+            window.pageYOffset -
+            navHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth", // 平滑滾動
+          });
+        });
+    </script>
   </body>
 </html>
