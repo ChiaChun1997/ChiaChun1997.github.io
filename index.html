@@ -16,6 +16,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/navbar.css" />
@@ -31,11 +38,18 @@
   <body>
     <header>
       <div class="nav">
-        <a class="logo" href="#">Chun</a>
+        <a class="logo" href="#" id="logoLink">Chun</a>
         <div class="burger">
           <a class="burgerText" href="#section2" id="aboutLink">About</a>
-          <a class="burgerText" href="#section5" id="portfolioLink">Portfolio</a>
-          <a class="burgerText" href="#">Github</a>
+          <a class="burgerText" href="#section5" id="portfolioLink"
+            >Portfolio</a
+          >
+          <a
+            class="burgerText"
+            href="https://github.com/ChiaChun1997"
+            target="_blank"
+            >Github</a
+          >
           <a class="burgerText" href="#contact" id="contactLink">Contact</a>
         </div>
       </div>
@@ -57,7 +71,11 @@
               ullamcorper etiam lorem eu sit neque amet. Non pellentesque semper
               libero viverra tortor ultrices volutpat.
             </p>
-            <a href="#contact" id="contactBtnLink" style="text-decoration: none">
+            <a
+              href="#contact"
+              id="contactBtnLink"
+              style="text-decoration: none"
+            >
               <button class="contactBtn">
                 <div class="contactBtnText">Contact</div>
               </button>
@@ -163,6 +181,7 @@
         </div>
       </div>
     </footer>
+    <button id="backToTopBtn" class="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
