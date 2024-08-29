@@ -34,9 +34,9 @@
         <a class="logo" href="#">Chun</a>
         <div class="burger">
           <a class="burgerText" href="#section2" id="aboutLink">About</a>
-          <a class="burgerText" href="#">Portfolio</a>
+          <a class="burgerText" href="#section5" id="portfolioLink">Portfolio</a>
           <a class="burgerText" href="#">Github</a>
-          <a class="burgerText" href="#">Contact</a>
+          <a class="burgerText" href="#contact" id="contactLink">Contact</a>
         </div>
       </div>
     </header>
@@ -57,7 +57,7 @@
               ullamcorper etiam lorem eu sit neque amet. Non pellentesque semper
               libero viverra tortor ultrices volutpat.
             </p>
-            <a href="#contact" style="text-decoration: none">
+            <a href="#contact" id="contactBtnLink" style="text-decoration: none">
               <button class="contactBtn">
                 <div class="contactBtnText">Contact</div>
               </button>
@@ -112,7 +112,7 @@
         </div>
         <div class="section4Image"></div>
       </section>
-      <section class="section5">
+      <section class="section5" id="section5">
         <div class="section5Title">Portfolio</div>
         <div class="cardFrame">
           <div class="portfolios">
@@ -176,26 +176,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      document
-        .getElementById("aboutLink")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href").substring(1); // 第 1 個字符（索引 1）開始提取子字符串，去掉 #，只返回 section1。
-          const targetElement = document.getElementById(targetId);
-          const navHeight = document.querySelector(".nav").offsetHeight;
-
-          const targetPosition =
-            targetElement.getBoundingClientRect().top +
-            window.pageYOffset -
-            navHeight;
-
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth", // 平滑滾動
-          });
-        });
-    </script>
+    <script src="./js/position.js"></script>
   </body>
 </html>
