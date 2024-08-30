@@ -1,23 +1,25 @@
 .section1 {
   display: flex;
+  margin-top: 50px;
   width: 100%;
-  height: 650px;
+  height: 550px;
   align-items: flex-start;
   flex-shrink: 0;
+  position: relative;
 }
 .section1Image {
-  width: 800px;
+  width: 720px;
   height: 375px;
   position: absolute;
-  left: 50px;
-  top: 177px;
+  left: 20px;
+  top: 30px;
   background: url(../images/grassland.jpg) lightgray 50% / cover no-repeat;
 }
 .section1Text {
-  width: 532px;
+  width: 500px;
   position: absolute;
-  right: 50px;
-  bottom: 135px;
+  right: 10px;
+  top: 350px;
   color: #000;
   font-family: Inter;
   font-size: 32px;

@@ -1,20 +1,26 @@
 .section4 {
   display: flex;
   width: 100%;
-  height: 630px;
-  padding: 63px 30px 10px 30px;
+  height: 500px;
+  padding: 0px;
+  margin-top: 45px;
   justify-content: space-between;
   align-items: flex-start;
   flex-shrink: 0;
 }
+.sec4Right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section4Content {
   display: flex;
-  width: 724px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 96px;
   flex-shrink: 0;
-  align-self: stretch;
+  /* align-self: stretch; */
 }
 .contentTitle {
   color: #000;
@@ -30,12 +36,22 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.6;
+  text-align: justify;
+}
+.section4Pic {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  position: relative;
 }
 .section4Image {
-  width: 583px;
-  height: 444px;
+  width: 500px;
+  height: 380px;
   flex-shrink: 0;
   border-radius: 40px;
   background: url(../images/book.jpg) lightgray 50% / cover no-repeat;
+  position: absolute;
+  left: 50px;
+  top: 60px;
 }
